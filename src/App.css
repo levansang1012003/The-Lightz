@@ -1,5 +1,11 @@
-.App {
-  text-align: center;
+body, .App {
+  min-height: 100vh;
+  position: relative;
+  background:
+    radial-gradient(circle at 20% 80%, rgba(14, 165, 233, 0.08) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(6, 182, 212, 0.06) 0%, transparent 50%),
+    radial-gradient(circle at 40% 40%, rgba(56, 189, 248, 0.04) 0%, transparent 30%),
+    linear-gradient(135deg, #101826 0%, #111827 50%, #0a101a 100%);
 }
 
 .App-logo {
@@ -35,4 +41,27 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+/* Custom Scrollbar for Chrome, Edge, Safari */
+::-webkit-scrollbar {
+  width: 8px;
+  background: #101c2b;
+}
+::-webkit-scrollbar-thumb {
+  background: #0074cc;
+  border-radius: 6px;
+  transition: background 0.2s;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #0099ff;
+}
+::-webkit-scrollbar-track {
+  background: #101c2b;
+}
+
+/* For Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #0074cc #101c2b;
 }

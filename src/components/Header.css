@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+.header-bar {
+  width: 100%;
+  height: 116px;
+  background: #101826;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 160px;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 20;
+  font-family: 'Roboto', Arial, sans-serif;
+  border-bottom: 2px solid #19aaff44;
+  box-shadow: 0 2px 16px 0 #19aaff11;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 48px;
+}
+.logo-glow {
+  width: 54px;
+  height: 54px;
+  border-radius: 12px;
+  background: #181f2a;
+  color: #19aaff;
+  font-weight: 700;
+  font-size: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 24px 4px #19aaff99, 0 0 0 2px #19aaff;
+  text-shadow: 0 0 12px #19aaff, 0 0 2px #fff;
+  letter-spacing: 1px;
+  margin-right: 6px;
+}
+.header-title {
+  color: #19aaff;
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+  text-shadow: 0 0 12px #19aaff, 0 0 2px #fff;
+  user-select: none;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 48px;
+}
+
+.community-dropdown {
+  position: relative;
+}
+.community-btn, .login-btn-header, .header-home-btn {
+  position: relative;
+  background: linear-gradient(29deg, #0a0a0a 0%, #1a1a1a 50%, #0a0a0a 100%);
+  color: #b0b8c1;
+  border: 1.5px solid #23272b;
+  border-radius: 14px;
+  padding: 14px 36px;
+  font-weight: 700;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  box-shadow: 0 2px 8px 0 #00000033;
+  transition: background 0.2s, border 0.2s, color 0.2s, box-shadow 0.2s;
+  outline: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: 'Roboto', Arial, sans-serif;
+  overflow: visible;
+  z-index: 2;
+  clip-path: polygon(0 0, calc(100% - 18px) 0, 100% 18px, 100% 100%, 0 100%);
+}
+
+.community-btn:hover, .login-btn-header:hover {
+  background: linear-gradient(29deg, #181a1d 0%, #23272b 100%);
+  color: #fff;
+  border: 1.5px solid #19aaff;
+  box-shadow: 0 4px 16px 0 #00ffe799;
+}
+.arrow {
+  font-size: 13px;
+  margin-left: 6px;
+}
+.dropdown-menu {
+  position: absolute;
+  top: 110%;
+  left: 0;
+  background: #181f2a;
+  border: 1.5px solid #2a7cff;
+  border-radius: 8px;
+  box-shadow: 0 4px 24px 0 #2a7cff33;
+  min-width: 160px;
+  padding: 8px 0;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+}
+.dropdown-item {
+  color: #fff;
+  padding: 10px 22px;
+  font-size: 15px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: background 0.2s, color 0.2s;
+}
+.dropdown-item:hover {
+  background: #232b3b;
+  color: #19aaff;
+}
+.dropdown-item i {
+  font-size: 18px;
+  width: 22px;
+  text-align: center;
+}
+
+.login-btn-header:hover, .login-btn-header:focus {
+  background: #232b3b;
+  border: 1.5px solid #19aaff;
+  color: #19aaff;
+}
+
+.header-home-btn {
+  text-decoration: none !important;
+}
+.header-home-btn:hover, .header-home-btn:focus {
+  text-decoration: none !important;
+}
+
+@media (max-width: 1400px) {
+  .header-bar {
+    padding: 0 40px;
+  }
+}
+@media (max-width: 700px) {
+  .header-bar {
+    padding: 0 8px;
+    height: 60px;
+  }
+  .logo-glow {
+    width: 32px;
+    height: 32px;
+    font-size: 15px;
+    border-radius: 8px;
+  }
+  .header-title {
+    font-size: 18px;
+  }
+  .community-btn, .login-btn-header, .header-home-btn {
+    font-size: 13px;
+    padding: 7px 12px;
+    border-radius: 8px;
+  }
+  .header-left, .header-right {
+    gap: 12px;
+  }
+  .dropdown-menu {
+    min-width: 120px;
+  }
+} 

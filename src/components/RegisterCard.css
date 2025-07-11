@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Roboto+Mono:wght@400;700&display=swap');
+
+.register-card {
+  background: #16202e;
+  border-radius: 16px;
+  border: 1.5px solid #2a7cff;
+  box-shadow: 0 8px 32px 0 rgba(0,0,0,0.5);
+  width: 600px;
+  margin: 48px auto 0 auto;
+  padding: 54px 54px 44px 54px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Roboto', Arial, sans-serif;
+}
+
+.register-title {
+  color: #19aaff;
+  font-size: 42px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 26px;
+  font-family: 'Roboto Mono', 'Roboto', Arial, monospace;
+  letter-spacing: 1px;
+}
+
+.register-count {
+  color: #4fc3f7;
+  font-size: 64px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  text-align: center;
+  font-family: 'Roboto Mono', 'Roboto', Arial, monospace;
+  letter-spacing: 1px;
+}
+
+.register-desc {
+  color: #b0b8c1;
+  font-size: 22px;
+  margin-bottom: 26px;
+  text-align: center;
+  font-family: 'Roboto Mono', 'Roboto', Arial, monospace;
+  letter-spacing: 0.5px;
+}
+
+.register-label {
+  color: #b0b8c1;
+  font-size: 20px;
+  margin-bottom: 8px;
+  text-align: center;
+  font-family: 'Roboto Mono', 'Roboto', Arial, monospace;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.register-countdown {
+  color: #ffb74d;
+  font-size: 38px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  text-align: center;
+  letter-spacing: 1.5px;
+  font-family: 'Roboto Mono', 'Roboto', Arial, monospace;
+}
+
+.register-date {
+  color: #fff;
+  font-size: 18px;
+  margin-bottom: 26px;
+  text-align: center;
+  font-family: 'Roboto Mono', 'Roboto', Arial, monospace;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.register-roadmap {
+  background: #19263a;
+  border-radius: 8px;
+  border: 1px solid #2a7cff;
+  padding: 24px 30px 18px 30px;
+  margin-bottom: 34px;
+  width: 100%;
+  box-sizing: border-box;
+  font-family: 'Roboto Mono', 'Roboto', Arial, monospace;
+}
+.roadmap-title {
+  color: #4fc3f7;
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  font-family: 'Roboto Mono', 'Roboto', Arial, monospace;
+  letter-spacing: 1px;
+}
+.roadmap-row {
+  display: flex;
+  justify-content: space-between;
+  color: #e3e8ef;
+  font-size: 20px;
+  margin-bottom: 6px;
+  font-family: 'Roboto Mono', 'Roboto', Arial, monospace;
+}
+.roadmap-note {
+  color: #b0b8c1;
+  font-size: 17px;
+  margin-top: 12px;
+  font-style: italic;
+  font-family: 'Roboto Mono', 'Roboto', Arial, monospace;
+}
+
+.register-btn-main {
+  background: linear-gradient(90deg, #2196f3 0%, #21cbf3 100%);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 22px 0;
+  font-size: 26px;
+  font-weight: 700;
+  width: 100%;
+  margin-top: 20px;
+  cursor: pointer;
+  box-shadow: 0 2px 8px 0 #2196f355;
+  transition: background 0.2s, box-shadow 0.2s;
+  letter-spacing: 0.5px;
+  font-family: 'Roboto Mono', 'Roboto', Arial, monospace;
+}
+.register-btn-main:hover {
+  background: linear-gradient(90deg, #21cbf3 0%, #2196f3 100%);
+  box-shadow: 0 4px 16px 0 #2196f377;
+} 

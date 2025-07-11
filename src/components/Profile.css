@@ -1,0 +1,166 @@
+.profile-container {
+  background: #101c2c;
+  border-radius: 16px;
+  padding: 32px 84px;
+  color: #fff;
+  max-width: 1200px;
+  margin: 40px auto;
+  box-shadow: 0 0 16px #000a;
+  border: 1.5px solid #1ecfff33;
+  margin-left: 40px;
+}
+
+@media (max-width: 1100px) {
+  .profile-container {
+    margin-left: 0;
+    padding: 24px 6px;
+  }
+}
+
+.profile-header {
+  font-family: 'Share Tech Mono', 'Consolas', monospace;
+  font-size: 1.45rem;
+  font-weight: bold;
+  color: #1ecfff;
+  letter-spacing: 1px;
+  margin-bottom: 0.5rem;
+}
+
+.profile-desc {
+  color: #3ecfff;
+  font-size: 0.98rem;
+  font-family: 'Share Tech Mono', 'Consolas', monospace;
+  margin-bottom: 18px;
+  font-weight: 500;
+}
+
+.profile-fields-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px 60px;
+  margin-bottom: 10px;
+}
+@media (max-width: 900px) {
+  .profile-fields-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+}
+
+.profile-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 10px;
+}
+
+.profile-label {
+  font-family: 'Share Tech Mono', 'Consolas', monospace;
+  font-weight: 600;
+  color: #3ecfff;
+  font-size: 0.98rem;
+  margin-bottom: 2px;
+  line-height: 1.2;
+  letter-spacing: 0.1px;
+}
+
+.profile-input {
+  background: #18263a;
+  border: 1.5px solid #1ecfff44;
+  border-radius: 8px;
+  color: #fff;
+  padding: 10px 16px;
+  width: 100%;
+  font-size: 1.01rem;
+  font-family: 'Share Tech Mono', 'Consolas', monospace;
+  margin-bottom: 0;
+  line-height: 1.3;
+}
+
+.profile-input-group {
+  display: flex;
+  gap: 12px;
+}
+
+.profile-btn {
+  background: linear-gradient(90deg, #3a3f47 60%, #23282f 100%);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 14px 0;
+  min-width: 180px;
+  font-weight: 700;
+  font-size: 1.08rem;
+  font-family: 'Share Tech Mono', 'Consolas', monospace;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.6;
+  box-shadow: none;
+  transition: filter 0.2s, opacity 0.2s;
+  cursor: not-allowed;
+}
+.profile-btn:hover {
+  filter: brightness(1.08);
+}
+
+.profile-warning, .profile-warning-large {
+  grid-column: 1 / -1;
+  font-size: 0.92rem;
+  font-family: 'Share Tech Mono', 'Consolas', monospace;
+  line-height: 1.4;
+  margin-top: 6px;
+  margin-bottom: 0;
+}
+
+.profile-warning-large {
+  color: #ffb300;
+  background: linear-gradient(90deg, #232323 60%, #23282f 100%);
+  border-radius: 10px;
+  border: 1.2px solid #ffb30055;
+  padding: 16px 18px 12px 18px;
+  margin-top: 8px;
+  font-size: 0.97rem;
+  font-family: 'Share Tech Mono', 'Consolas', monospace;
+  line-height: 1.5;
+  font-weight: 500;
+}
+.profile-warning-large b {
+  color: #ffb300;
+  font-size: 1.01rem;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 4px;
+}
+.profile-warning-large br {
+  display: none;
+}
+.profile-warning-large span, .profile-warning-large {
+  color: #fff;
+  font-weight: 400;
+}
+
+.profile-edit-btn {
+  background: #1ecfff;
+  color: #101c2c;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 32px;
+  font-size: 1.08rem;
+  font-weight: bold;
+  margin-top: 14px;
+  cursor: pointer;
+  transition: background 0.2s;
+  box-shadow: 0 2px 8px #1ecfff33;
+  width: auto;
+  min-width: 180px;
+  max-width: 260px;
+  display: block;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.profile-edit-btn:hover {
+  background: #0e9fd6;
+} 
