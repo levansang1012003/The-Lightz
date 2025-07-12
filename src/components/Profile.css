@@ -1,13 +1,13 @@
 .profile-container {
   background: #101c2c;
   border-radius: 16px;
-  padding: 32px 84px;
+  padding: 40px 100px;
   color: #fff;
   max-width: 1200px;
-  margin: 40px auto;
-  box-shadow: 0 0 16px #000a;
-  border: 1.5px solid #1ecfff33;
+  margin: 1px auto;
+  border: 1.5px solid #172c3233;
   margin-left: 40px;
+  font-family: 'Roboto Mono', 'Roboto', Arial, monospace;
 }
 
 @media (max-width: 1100px) {
@@ -18,27 +18,27 @@
 }
 
 .profile-header {
-  font-family: 'Share Tech Mono', 'Consolas', monospace;
-  font-size: 1.45rem;
+  font-family: 'Roboto Mono', 'Roboto', Arial, monospace;
+  font-size: 2.1rem;
   font-weight: bold;
   color: #1ecfff;
   letter-spacing: 1px;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.7rem;
 }
 
 .profile-desc {
   color: #3ecfff;
-  font-size: 0.98rem;
-  font-family: 'Share Tech Mono', 'Consolas', monospace;
-  margin-bottom: 18px;
+  font-size: 1.18rem;
+  font-family: 'Roboto Mono', 'Roboto', Arial, monospace;
+  margin-bottom: 22px;
   font-weight: 500;
 }
 
 .profile-fields-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 18px 60px;
-  margin-bottom: 10px;
+  gap: 22px 60px;
+  margin-bottom: 16px;
 }
 @media (max-width: 900px) {
   .profile-fields-grid {
@@ -50,15 +50,15 @@
 .profile-field {
   display: flex;
   flex-direction: column;
-  gap: 6px;
-  margin-bottom: 10px;
+  gap: 8px;
+  margin-bottom: 12px;
 }
 
 .profile-label {
-  font-family: 'Share Tech Mono', 'Consolas', monospace;
+  font-family: 'Roboto Mono', 'Roboto', Arial, monospace;
   font-weight: 600;
   color: #3ecfff;
-  font-size: 0.98rem;
+  font-size: 1.13rem;
   margin-bottom: 2px;
   line-height: 1.2;
   letter-spacing: 0.1px;
@@ -69,10 +69,10 @@
   border: 1.5px solid #1ecfff44;
   border-radius: 8px;
   color: #fff;
-  padding: 10px 16px;
+  padding: 14px 20px;
   width: 100%;
-  font-size: 1.01rem;
-  font-family: 'Share Tech Mono', 'Consolas', monospace;
+  font-size: 1.18rem;
+  font-family: 'Roboto Mono', 'Roboto', Arial, monospace;
   margin-bottom: 0;
   line-height: 1.3;
 }
@@ -87,12 +87,12 @@
   color: #fff;
   border: none;
   border-radius: 10px;
-  padding: 14px 0;
+  padding: 16px 0;
   min-width: 180px;
   font-weight: 700;
-  font-size: 1.08rem;
-  font-family: 'Share Tech Mono', 'Consolas', monospace;
-  height: 44px;
+  font-size: 1.18rem;
+  font-family: 'Roboto Mono', 'Roboto', Arial, monospace;
+  height: 48px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -107,10 +107,10 @@
 
 .profile-warning, .profile-warning-large {
   grid-column: 1 / -1;
-  font-size: 0.92rem;
-  font-family: 'Share Tech Mono', 'Consolas', monospace;
-  line-height: 1.4;
-  margin-top: 6px;
+  font-size: 1.08rem;
+  font-family: 'Roboto Mono', 'Roboto', Arial, monospace;
+  line-height: 1.5;
+  margin-top: 10px;
   margin-bottom: 0;
 }
 
@@ -119,16 +119,16 @@
   background: linear-gradient(90deg, #232323 60%, #23282f 100%);
   border-radius: 10px;
   border: 1.2px solid #ffb30055;
-  padding: 16px 18px 12px 18px;
-  margin-top: 8px;
-  font-size: 0.97rem;
-  font-family: 'Share Tech Mono', 'Consolas', monospace;
-  line-height: 1.5;
+  padding: 20px 22px 16px 22px;
+  margin-top: 12px;
+  font-size: 1.13rem;
+  font-family: 'Roboto Mono', 'Roboto', Arial, monospace;
+  line-height: 1.6;
   font-weight: 500;
 }
 .profile-warning-large b {
   color: #ffb300;
-  font-size: 1.01rem;
+  font-size: 1.18rem;
   font-weight: bold;
   display: block;
   margin-bottom: 4px;
@@ -146,10 +146,10 @@
   color: #101c2c;
   border: none;
   border-radius: 8px;
-  padding: 12px 32px;
-  font-size: 1.08rem;
+  padding: 16px 38px;
+  font-size: 1.18rem;
   font-weight: bold;
-  margin-top: 14px;
+  margin-top: 18px;
   cursor: pointer;
   transition: background 0.2s;
   box-shadow: 0 2px 8px #1ecfff33;
@@ -159,8 +159,44 @@
   display: block;
   margin-left: 0;
   margin-right: 0;
+  font-family: 'Roboto Mono', 'Roboto', Arial, monospace;
 }
 
 .profile-edit-btn:hover {
   background: #0e9fd6;
+}
+
+@media (max-width: 900px) {
+  .profile-container {
+    padding: 12px 2vw;
+    margin-left: 0;
+    max-width: 100vw;
+  }
+  .profile-header {
+    font-size: 1.3rem;
+  }
+  .profile-desc {
+    font-size: 1rem;
+  }
+  .profile-fields-grid {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  .profile-label {
+    font-size: 0.98rem;
+  }
+  .profile-input {
+    font-size: 1rem;
+    padding: 10px 8px;
+  }
+  .profile-btn, .profile-edit-btn {
+    font-size: 1rem;
+    padding: 10px 0;
+    min-width: 120px;
+    height: 38px;
+  }
+  .profile-warning, .profile-warning-large {
+    font-size: 0.95rem;
+    padding: 8px 6px;
+  }
 } 

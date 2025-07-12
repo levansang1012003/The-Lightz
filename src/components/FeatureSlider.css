@@ -187,4 +187,77 @@
     font-size: 12px;
     padding: 4px 10px;
   }
+}
+@media (max-width: 600px) {
+  .feature-section {
+    margin: 18px 0 0 0;
+    padding: 0 2vw;
+  }
+  .feature-title {
+    font-size: 15px;
+    margin-bottom: 12px;
+  }
+  .feature-slider {
+    min-height: 180px;
+    border-radius: 10px;
+    max-width: 99vw;
+    position: relative;
+  }
+  .feature-main-title {
+    font-size: 16px;
+    margin-bottom: 8px;
+    letter-spacing: 1px;
+    word-break: break-word;
+  }
+  .feature-desc {
+    font-size: 10px;
+    margin-bottom: 10px;
+    word-break: break-word;
+  }
+  .feature-tag {
+    font-size: 9px;
+    padding: 2px 6px;
+    border-radius: 12px;
+  }
+  .feature-tags {
+    gap: 6px;
+    margin-bottom: 8px;
+    flex-wrap: wrap;
+  }
+  .feature-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 38px;
+    height: 38px;
+    min-width: 32px;
+    min-height: 32px;
+    max-width: 44px;
+    max-height: 44px;
+    font-size: 22px;
+    border-width: 2px;
+    z-index: 10;
+    background: #101c2b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 8px #19aaff55;
+  }
+  .feature-arrow.left {
+    left: 4px;
+    right: auto;
+  }
+  .feature-arrow.right {
+    right: 4px;
+    left: auto;
+  }
+  .feature-dots {
+    bottom: 10px;
+    gap: 6px;
+  }
+  .dot {
+    width: 8px;
+    height: 8px;
+    border-width: 1.5px;
+  }
 } 

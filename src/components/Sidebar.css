@@ -76,4 +76,31 @@
 .sidebar-menu-icon {
   font-size: 20px;
   color: inherit;
+}
+
+/* Responsive for sidebar */
+@media (max-width: 900px) {
+  .sidebar {
+    width: 100vw;
+    min-width: unset;
+    max-width: unset;
+    padding: 8px 0 4px 0;
+    border-radius: 0 0 16px 16px;
+    box-shadow: 0 2px 12px #0003;
+    margin: 0 auto 12px auto;
+  }
+  .sidebar .sidebar-menu {
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 0;
+  }
+  .sidebar .sidebar-menu-item {
+    font-size: 15px;
+    padding: 8px 6px;
+    min-width: 60px;
+  }
+  .sidebar .sidebar-header, .sidebar .sidebar-user {
+    font-size: 15px;
+    padding: 4px 0;
+  }
 } 

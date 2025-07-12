@@ -11,10 +11,12 @@ import LoginForm from './components/LoginForm'
 import RegisterForm from './components/RegisterForm'
 import PrivacyPolicy from './components/PrivacyPolicy'
 import Dashboard from './components/Dashboard'
+import ForgotPassword from './components/ForgotPassword'
 
 function App() {
   const [showLoginModal, setShowLoginModal] = useState(false)
   const [showRegisterModal, setShowRegisterModal] = useState(false)
+  const [showForgot, setShowForgot] = useState(false)
 
   const handleOpenLogin = () => {
     setShowRegisterModal(false)
@@ -33,17 +35,24 @@ function App() {
     <Router>
       <div className="App">
         <Header onLoginClick={handleOpenLogin} />
-        {showLoginModal && (
-          <LoginForm
-            onClose={handleCloseModals}
-            onSwitchToRegister={handleOpenRegister}
-          />
-        )}
-        {showRegisterModal && (
-          <RegisterForm
-            onClose={handleCloseModals}
-            onSwitchToLogin={handleOpenLogin}
-          />
+        {showForgot ? (
+          <ForgotPassword onClose={() => setShowForgot(false)} />
+        ) : (
+          <>
+            {showLoginModal && (
+              <LoginForm
+                onClose={handleCloseModals}
+                onSwitchToRegister={handleOpenRegister}
+                onForgotPassword={() => setShowForgot(true)}
+              />
+            )}
+            {showRegisterModal && (
+              <RegisterForm
+                onClose={handleCloseModals}
+                onSwitchToLogin={handleOpenLogin}
+              />
+            )}
+          </>
         )}
         <Routes>
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />

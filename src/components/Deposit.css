@@ -1,0 +1,217 @@
+/* Deposit.css */
+.deposit-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 32px;
+  font-family: 'Roboto Mono', 'Roboto', Arial, monospace;
+}
+.deposit-main-box {
+  width: 100%;
+  max-width: 1225px;
+  background: rgba(16, 28, 43, 0.98);
+  border-radius: 20px;
+  border: 2px solid #15232c55;
+  padding: 31px;
+  margin-bottom: 74px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 116px;
+  margin-top: -26px;
+  transition: border 0.18s, box-shadow 0.18s;
+  font-family: 'Roboto Mono', 'Roboto', Arial, monospace;
+}
+.deposit-main-box:hover {
+  border: 2.5px solid #19aaff;
+  box-shadow: 0 0 24px 2px #19aaff55, 0 8px 32px 0 #19aaff33;
+}
+.deposit-title {
+  color: #19aaff;
+  font-size: 38px;
+  font-weight: 700;
+  margin-bottom: 18px;
+  letter-spacing: 1.5px;
+  text-align: left;
+  font-family: 'Roboto Mono', 'Roboto', Arial, monospace;
+}
+.deposit-desc {
+  color: #b0b8c1;
+  font-size: 20px;
+  margin-bottom: 24px;
+  font-family: 'Roboto Mono', 'Roboto', Arial, monospace;
+}
+.deposit-balance-box {
+  background: #0e1a2b;
+  border-radius: 12px;
+  padding: 18px 24px;
+  margin-bottom: 32px;
+  color: #fff;
+  font-size: 26px;
+  font-family: 'Roboto Mono', 'Roboto', Arial, monospace;
+  display: flex;
+  gap: 18px;
+  align-items: center;
+}
+.deposit-balance-points {
+  color: #ffd600;
+  font-weight: 700;
+  font-size: 28px;
+}
+.deposit-balance-dollars {
+  color: #00e676;
+  font-weight: 700;
+  font-size: 28px;
+}
+.deposit-auto-box {
+  background: #101c2b;
+  border-radius: 16px;
+  padding: 32px 24px 24px 24px;
+  margin-bottom: 32px;
+  border: 2px solid #22334a;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Roboto Mono', 'Roboto', Arial, monospace;
+}
+.deposit-auto-title {
+  color: #19aaff;
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  text-align: center;
+  font-family: 'Roboto Mono', 'Roboto', Arial, monospace;
+}
+.deposit-auto-desc {
+  color: #b0b8c1;
+  font-size: 18px;
+  margin-bottom: 18px;
+  text-align: center;
+  font-family: 'Roboto Mono', 'Roboto', Arial, monospace;
+}
+.deposit-qr-placeholder {
+  width: 220px;
+  height: 220px;
+  background: #192a3a;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #19aaff;
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 24px;
+  border: 2px dashed #19aaff55;
+  font-family: 'Roboto Mono', 'Roboto', Arial, monospace;
+}
+.deposit-transfer-content-box {
+  width: 100%;
+  background: #22334a;
+  border-radius: 10px;
+  padding: 18px 16px;
+  margin-top: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+  font-size: 20px;
+  font-family: 'Roboto Mono', 'Roboto', Arial, monospace;
+}
+.deposit-transfer-content {
+  color: #19aaff;
+  font-size: 22px;
+  font-weight: 700;
+  margin: 8px 0 12px 0;
+  letter-spacing: 1px;
+  font-family: 'Roboto Mono', 'Roboto', Arial, monospace;
+}
+.deposit-copy-btn {
+  background: linear-gradient(90deg, #19aaff 0%, #0099ff 100%);
+  color: #fff;
+  font-weight: 700;
+  font-size: 18px;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 28px;
+  cursor: pointer;
+  box-shadow: 0 2px 16px 0 #19aaff44;
+  transition: background 0.18s, box-shadow 0.18s, transform 0.15s;
+  font-family: 'Roboto Mono', 'Roboto', Arial, monospace;
+}
+.deposit-copy-btn:hover {
+  background: linear-gradient(90deg, #0099ff 0%, #19aaff 100%);
+  box-shadow: 0 4px 24px 0 #19aaff77;
+  transform: translateY(-2px) scale(1.06);
+}
+.deposit-guide-box {
+  background: #101c2b;
+  border-radius: 16px;
+  padding: 24px 20px 18px 20px;
+  border: 2px solid #22334a;
+  color: #fff;
+  font-family: 'Roboto Mono', 'Roboto', Arial, monospace;
+}
+.deposit-guide-title {
+  color: #19aaff;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  font-family: 'Roboto Mono', 'Roboto', Arial, monospace;
+}
+.deposit-guide-sub {
+  color: #b0b8c1;
+  font-size: 18px;
+  margin-bottom: 10px;
+  font-family: 'Roboto Mono', 'Roboto', Arial, monospace;
+}
+.deposit-guide-list {
+  color: #fff;
+  font-size: 18px;
+  padding-left: 20px;
+  margin: 0;
+  font-family: 'Roboto Mono', 'Roboto', Arial, monospace;
+}
+@media (max-width: 900px) {
+  .deposit-main-box {
+    padding: 10px 2vw;
+    margin-left: 0;
+    margin-top: 0;
+    max-width: 100vw;
+  }
+  .deposit-title {
+    font-size: 22px;
+  }
+  .deposit-desc, .deposit-balance-box, .deposit-balance-points, .deposit-balance-dollars {
+    font-size: 15px;
+  }
+  .deposit-balance-box {
+    flex-direction: column;
+    gap: 6px;
+    padding: 10px 8px;
+  }
+  .deposit-auto-box, .deposit-guide-box {
+    padding: 8px 4px;
+  }
+  .deposit-qr-placeholder {
+    width: 100px;
+    height: 100px;
+    font-size: 10px;
+  }
+  .deposit-transfer-content-box {
+    font-size: 13px;
+    padding: 8px 4px;
+  }
+  .deposit-transfer-content {
+    font-size: 14px;
+  }
+  .deposit-copy-btn {
+    font-size: 13px;
+    padding: 6px 10px;
+  }
+  .deposit-guide-title {
+    font-size: 15px;
+  }
+  .deposit-guide-sub, .deposit-guide-list {
+    font-size: 13px;
+  }
+} 

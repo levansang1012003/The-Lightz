@@ -6,7 +6,7 @@
   border: 1.5px solid #2a7cff;
   box-shadow: 0 8px 32px 0 rgba(0,0,0,0.5);
   width: 600px;
-  margin: 48px auto 0 auto;
+  margin: 67px auto 16px auto;
   padding: 54px 54px 44px 54px;
   display: flex;
   flex-direction: column;
@@ -127,4 +127,64 @@
 .register-btn-main:hover {
   background: linear-gradient(90deg, #21cbf3 0%, #2196f3 100%);
   box-shadow: 0 4px 16px 0 #2196f377;
+}
+
+@media (max-width: 900px) {
+  .register-card {
+    width: 96vw;
+    min-width: 0;
+    max-width: 99vw;
+    margin: 12px auto 0 auto;
+    padding: 16px 4vw 16px 4vw;
+    border-radius: 12px;
+  }
+  .register-title {
+    font-size: 22px;
+    margin-bottom: 12px;
+  }
+  .register-count {
+    font-size: 32px;
+    margin-bottom: 4px;
+  }
+  .register-desc {
+    font-size: 13px;
+    margin-bottom: 10px;
+  }
+  .register-label {
+    font-size: 12px;
+    margin-bottom: 4px;
+  }
+  .register-countdown {
+    font-size: 18px;
+    margin-bottom: 4px;
+  }
+  .register-date {
+    font-size: 11px;
+    margin-bottom: 10px;
+  }
+  .register-roadmap {
+    padding: 10px 6px 8px 6px;
+    margin-bottom: 12px;
+    border-radius: 6px;
+  }
+  .roadmap-title {
+    font-size: 13px;
+    margin-bottom: 4px;
+  }
+  .roadmap-row {
+    font-size: 11px;
+    margin-bottom: 2px;
+    flex-direction: column;
+    gap: 2px;
+  }
+  .roadmap-note {
+    font-size: 10px;
+    margin-top: 4px;
+  }
+  .register-btn-main {
+    font-size: 15px;
+    padding: 10px 0;
+    margin-top: 10px;
+    border-radius: 6px;
+  }
 } 

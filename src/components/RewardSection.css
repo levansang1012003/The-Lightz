@@ -1,6 +1,6 @@
 .reward-section {
   width: 100%;
-  margin: 48px 0 0 0;
+  margin:-10px 0px 0 22px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -250,4 +250,57 @@
 .reward-detail-status .lock-icon {
   font-size: 18px;
   margin-right: 4px;
+} 
+
+@media (max-width: 900px) {
+  .reward-section {
+    margin: 8px 0 0 0;
+    padding: 0 2vw;
+  }
+  .reward-title {
+    font-size: 22px;
+    margin-bottom: 18px;
+  }
+  .reward-outer-box {
+    padding: 8px 2vw;
+    max-width: 100vw;
+  }
+  .reward-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    justify-items: center;
+    align-items: start;
+  }
+  .reward-card {
+    width: 44vw;
+    min-width: 150px;
+    max-width: 210px;
+    min-height: 160px;
+    padding: 12px 6px 12px 6px;
+    font-size: 14px;
+    margin-bottom: 0;
+  }
+  .reward-img, .reward-img-wrap {
+    width: 48px;
+    height: 48px;
+    margin-bottom: 8px;
+  }
+  .reward-name {
+    font-size: 15px;
+  }
+  .reward-people, .reward-status {
+    font-size: 12px;
+  }
+  .reward-detail-box {
+    min-width: 120px;
+    padding: 6px 4px 4px 4px;
+    font-size: 11px;
+  }
+  .reward-detail-title {
+    font-size: 12px;
+  }
+  .reward-detail-list {
+    font-size: 11px;
+  }
 } 
