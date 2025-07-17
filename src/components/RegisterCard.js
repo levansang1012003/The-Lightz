@@ -12,11 +12,11 @@ function getCountdown(targetDate) {
   return `${days}d ${hours}h ${minutes}m ${seconds}s`
 }
 
-const REGISTERED = 281
+// Số người đăng ký sẽ lấy từ props
 const BETA_DATE = new Date('2025-07-15T00:00:00')
 const OFFICIAL_DATE = new Date('2025-07-30T00:00:00')
 
-function RegisterCard({ onClick }) {
+function RegisterCard({ onClick, registeredCount = 0 }) {
   const [countdown, setCountdown] = useState(getCountdown(BETA_DATE))
 
   useEffect(() => {
@@ -29,7 +29,7 @@ function RegisterCard({ onClick }) {
   return (
     <div className="register-card">
       <div className="register-title">Đăng ký trước</div>
-      <div className="register-count">{REGISTERED}</div>
+      <div className="register-count">{registeredCount}</div>
       <div className="register-desc">người đã đăng ký</div>
       <div className="register-label">Thời gian còn lại đến Closed Beta:</div>
       <div className="register-countdown">{countdown}</div>

@@ -28,10 +28,6 @@ const Profile = () => {
           <input className="profile-input" value="10/07/2025" disabled />
         </div>
         <div className="profile-field">
-          <label className="profile-label">Lần login cuối</label>
-          <input className="profile-input" value="10/07/2025 18:21" disabled />
-        </div>
-        <div className="profile-field">
           <label className="profile-label">Account Status</label>
           <input className="profile-input" value="Active" disabled />
         </div>
@@ -44,6 +40,7 @@ const Profile = () => {
             </button>
           </div>
         </div>
+
       </div>
       <div className="profile-warning">
         Email chưa được xác nhận. Vui lòng kiểm tra hộp thư của bạn.
@@ -63,3 +60,4 @@ const Profile = () => {
 }
 
 export default Profile
+

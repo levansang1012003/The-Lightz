@@ -8,7 +8,7 @@ const COMMUNITY_LINKS = [
   { name: 'Discord', url: 'https://discord.com', icon: 'fab fa-discord' },
 ]
 
-function Header({ onLoginClick }) {
+function Header({ onLoginClick, isLoggedIn }) {
   const location = useLocation()
   const showHomeButton =
     location.pathname === '/privacy-policy' ||
@@ -65,9 +65,11 @@ function Header({ onLoginClick }) {
             </div>
           )}
         </div>
-        <button className="login-btn-header" onClick={onLoginClick}>
-          Đăng nhập
-        </button>
+        {!isLoggedIn && (
+          <button className="login-btn-header" onClick={onLoginClick}>
+            Đăng nhập
+          </button>
+        )}
       </div>
     </div>
   )

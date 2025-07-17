@@ -11,10 +11,36 @@ function RegisterForm({
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
   const [confirmPassword, setConfirmPassword] = useState('')
+  const [message, setMessage] = useState('')
+  const [error, setError] = useState('')
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault()
-    onRegister(username, email, password, confirmPassword)
+    setMessage('')
+    setError('')
+    if (password !== confirmPassword) {
+      setError('Mật khẩu xác nhận không khớp')
+      return
+    }
+    try {
+      const res = await fetch('http://localhost:3001/register', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ username, email, password })
+      })
+      const data = await res.json()
+      if (res.ok) {
+        setMessage('Đăng ký thành công!')
+        setUsername('')
+        setEmail('')
+        setPassword('')
+        setConfirmPassword('')
+      } else {
+        setError(data.error || 'Đăng ký thất bại')
+      }
+    } catch (err) {
+      setError('Lỗi kết nối server')
+    }
   }
 
   return (
@@ -81,6 +107,8 @@ function RegisterForm({
               onChange={(e) => setConfirmPassword(e.target.value)}
             />
           </div>
+          {error && <div style={{ color: 'red', marginBottom: 8 }}>{error}</div>}
+          {message && <div style={{ color: 'green', marginBottom: 8 }}>{message}</div>}
           <button
             type="submit"
             className="btn btn-primary"
